@@ -1,0 +1,6 @@
+{
+  "extension": ["ts", "tsx"],
+  "require": ["hardhat/register"],
+  "spec": ["./test/**/*.ts"],
+  "timeout": 1200000
+}

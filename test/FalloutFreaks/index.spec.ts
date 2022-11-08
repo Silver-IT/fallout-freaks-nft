@@ -1,0 +1,35 @@
+import supportedInterfaces from "./suites/supportedInterfaces.test";
+import publicVariables from "./suites/publicVariables.test";
+import receivingEther from "./suites/receivingEther.test";
+import withdrawingEther from "./suites/withdrawingEther.test";
+import batchMint from "./suites/batchMint.test";
+import randomMutationMint from "./suites/randomMutationMint.test";
+import crystalMutationMint from "./suites/crystalMutationMint.test";
+import reserveMint from "./suites/reserveMint.test";
+import saleState from "./suites/saleState.test";
+import signingTx from "./suites/signingTx.test";
+import baseURI from "./suites/baseURI.test";
+import burn from "./suites/burn.test";
+import moderator from "./suites/moderator.test";
+import royaltyReceiver from "./suites/royaltyReceiver.test";
+import transferOwnership from "./suites/transferOwnership.test";
+import authorizedAddress from "./suites/authorizedAddress.test";
+
+describe("FalloutFreaks", function () {
+  describe("When supporting interfaces", supportedInterfaces.bind(this));
+  describe("When getting public variables", publicVariables.bind(this));
+  describe("When setting baseURI", baseURI.bind(this));
+  describe("When signing tx", signingTx.bind(this));
+  describe("When receiving ether", receivingEther.bind(this));
+  describe("When withdrawing ether", withdrawingEther.bind(this));
+  describe("When batch mint", batchMint.bind(this));
+  describe("When random mutation mint", randomMutationMint.bind(this));
+  describe("When crystal mutation mint", crystalMutationMint.bind(this));
+  describe("When minting reserved", reserveMint.bind(this));
+  describe("When changing sale state", saleState.bind(this));
+  describe("When updating ownership", moderator.bind(this));
+  describe("When update authorized addresses", authorizedAddress.bind(this));
+  describe("When update royalty options", royaltyReceiver.bind(this));
+  describe("When transfer ownership", transferOwnership.bind(this));
+  describe("When burning", burn.bind(this));
+});
